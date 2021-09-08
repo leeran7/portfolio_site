@@ -16,9 +16,27 @@ html, body {
   font-weight: 700;
   font-size: 30px !important;
 }
+.link{
+  text-decoration: none;
+  color: whitesmoke !important;
+}
 .display-3 {
-  color: #d3d3d3;
+  color: #f3f3f3;
   font-size: 18px !important;
+}
+.animated{
+  animation: animate 1s linear infinite;
+}
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 html,html *{box-sizing: border-box !important;}
 .form-group input{
@@ -34,6 +52,20 @@ form{
   margin: 10px;
   padding-bottom: 20px;
 }
+.console p{
+  font-family: 'Source Code Pro', monospace;
+  max-width: 700px;
+  margin: 2px auto; 
+}
+.about-me{
+  font-family: 'Source Code Pro', monospace;
+  max-width: 1000px;
+  margin: 2px auto; 
+}
+.result{
+  color: #2ECC71;
+  font-family: 'Source Code Pro', monospace;
+}
 nav {
   height: 80px;
   padding: 20px;
@@ -48,7 +80,7 @@ nav {
 }
 section {
   height: 100vh;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 #profile-pic{
   height: 20%;
@@ -62,6 +94,9 @@ section {
     height: 25%;
     width: 25%;
   }
+  .about-me{
+    font-size: smaller;
+  }
 }
 @media only screen and (max-width: 991px) {
   textarea{
@@ -69,6 +104,9 @@ section {
   }
   .navbar-nav{
     flex-direction: row !important;
+  }
+  .about-me{
+    font-size: small;
   }
 }
 @media only screen and (max-width: 654px) {
@@ -97,4 +135,10 @@ a:hover{
 }
 .error{
   background-color: rgba(226, 7, 32,0.8);
+}
+u{
+  font-size: larger;
+  padding-right: 10px;
+  font-weight: 800;
+  color: #cfcf28
 }
