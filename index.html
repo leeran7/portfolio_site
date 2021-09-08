@@ -7,50 +7,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Leerans Portfolio</title>
 </head>
-<body>
-    <nav class="navbar fixed-top bg-dark navbar-dark">
-        <a class="navbar-brand mx-auto" href="index.html">Leeran Farin</a>
-        <div class="container justify-content-end">
-            
-            <ul class="navbar-nav flex-row">
-                <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-file-person"></i> About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href="#social">Social Media</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope-open"></i> Contact</a></li>
-            </ul>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Leeran Farin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navBar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#social">Social Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing">Resume</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-      <!-- <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        
-      </div> -->
-    <content>
-        <div id="about">
+    
+    <content data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <section id="welcome">
+        <div class="jumbotron d-flex flex-row justify-content-center">
+          <img class="img-fluid" id="profile-pic" src="./photos/IMG_0066 4.JPG" alt="Profile Pic"/>
         </div>
-        <div id="portfolio">
-        </div>
-        <div id="resume">
-        </div>
-        <div id="social">
-            <div class="card text-center">
-                <div class="card-header">
-                  Featured
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer text-muted">
-                  2 days ago
-                </div>
-              </div>
-        </div>
-        <div id="contact">
-        </div>
+      </section>
+        <section id="about">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam ullam asperiores animi doloribus maiores eius, earum fuga! Tempora vitae ducimus nobis alias, placeat consectetur! Quas accusamus ad quasi est?</p>
+          <hr />
+        </section>
+        <section id="portfolio">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam ullam asperiores animi doloribus maiores eius, earum fuga! Tempora vitae ducimus nobis alias, placeat consectetur! Quas accusamus ad quasi est?</p>
+          <hr />
+        </section>
+        <section id="social">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam ullam asperiores animi doloribus maiores eius, earum fuga! Tempora vitae ducimus nobis alias, placeat consectetur! Quas accusamus ad quasi est?</p>
+          <hr />
+        </section>
+        <section id="contact">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam ullam asperiores animi doloribus maiores eius, earum fuga! Tempora vitae ducimus nobis alias, placeat consectetur! Quas accusamus ad quasi est?</p>
+          <hr />
+        </section>
     </content>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
