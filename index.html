@@ -51,20 +51,24 @@
         </section>
         <section id="contact">
           <div class="form-group container">
+            
               <div class="row">
                 <div class="col-lg-12 center">
                   <h1 class="display-1 mb-5 pt-5">Contact Me</h1>
                   <h3 class="display-3">Leeran7@gmail.com OR Leeran.Farin@cix.csi.cuny.edu</h3>
                 </div>
               </div>
-            <form class="d-lg-flex flex-fill" method="POST" action="mailto:leeran7@gmail.com">
+              <div class="row px-4">
+                <div id="email_status" class="center"></div>
+              </div>
+            <form class="d-lg-flex flex-fill" id="form" method="POST" action="https://formspree.io/f/xeqvvnnr">
               <div class="col-lg-6 col-md-12 m-2">
-                <input class="form-control" required placeholder="Name *"/>
-                <input class="form-control" required placeholder="Email *"/>
-                <input class="form-control" placeholder="Phone Number" />
+                <input class="form-control" required id="Name" name="Name" placeholder="Name *"/>
+                <input class="form-control" required id="Email" name="Email" placeholder="Email *"/>
+                <input class="form-control" id="Phone" name="Phone" placeholder="Phone Number" />
               </div>
               <div class="col-lg-6 col-md-12  m-2">
-                <textarea class="form-control" required placeholder="Message *"></textarea>
+                <textarea class="form-control" id="Message" name="Message" required placeholder="Message *"></textarea>
                 <button class="btn btn-secondary form-control" type="submit">Submit</button>
               </div>
               
@@ -74,7 +78,31 @@
     </content>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    var form = document.getElementById("form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("email_status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Success!";
+        status.classList.add("success");
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.classList.add("error");
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
 </body>
 </html>

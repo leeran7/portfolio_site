@@ -92,3 +92,9 @@ section {
 a:hover{
   color: #cfcf28 !important;
 }
+.success{
+  background-color: rgb(8, 150, 25,0.8);
+}
+.error{
+  background-color: rgba(226, 7, 32,0.8);
+}
