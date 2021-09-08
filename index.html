@@ -20,10 +20,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navBar">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav align-items-center">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#social">Social Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing">Resume</a></li>
           </ul>
@@ -50,8 +50,26 @@
           <hr />
         </section>
         <section id="contact">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam ullam asperiores animi doloribus maiores eius, earum fuga! Tempora vitae ducimus nobis alias, placeat consectetur! Quas accusamus ad quasi est?</p>
-          <hr />
+          <div class="form-group container">
+              <div class="row">
+                <div class="col-lg-12 center">
+                  <h1 class="display-1 mb-5 pt-5">Contact Me</h1>
+                  <h3 class="display-3">Leeran7@gmail.com OR Leeran.Farin@cix.csi.cuny.edu</h3>
+                </div>
+              </div>
+            <form class="d-lg-flex flex-fill" method="POST" action="mailto:leeran7@gmail.com">
+              <div class="col-lg-6 col-md-12 m-2">
+                <input class="form-control" required placeholder="Name *"/>
+                <input class="form-control" required placeholder="Email *"/>
+                <input class="form-control" placeholder="Phone Number" />
+              </div>
+              <div class="col-lg-6 col-md-12  m-2">
+                <textarea class="form-control" required placeholder="Message *"></textarea>
+                <button class="btn btn-secondary form-control" type="submit">Submit</button>
+              </div>
+              
+            </form>
+          </div>
         </section>
     </content>
     <footer></footer>
