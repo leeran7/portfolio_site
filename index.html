@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
     <title>Leerans Portfolio</title>
 </head>
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Leeran Farin</a>
+        <a class="navbar-brand" href="#">Leeran Joseph Farin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,7 +27,7 @@
             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><i class="far fa-file-alt"></i> Resume</a></li>
           </ul>
         </div>
       </div>
@@ -34,8 +35,8 @@
     
     <content data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
       <section id="welcome">
-        <div class="jumbotron d-flex flex-row justify-content-center">
-          <img class="img-fluid" id="profile-pic" src="./photos/IMG_0066 4.JPG" alt="Profile Pic"/>
+        <div class="m-0 p-top">
+          <h1 class="display-1 text-center welcomeMessage"></h1>
         </div>
       </section>
         <section id="about">
@@ -44,7 +45,7 @@
               <div class="center col-lg-12">
                 <h1 class="display-1">About Leeran</h1>
               </div>
-              <div class="pt-4 console">
+              <div class="pt-5 console">
                 <p>&gt;  Leeran.location</p>
                 <p>&lt;• <span class="result">"Staten Island, NY"</span></p>
                 <p>&gt;  Leeran.major</p>
@@ -52,17 +53,18 @@
                 <p>&gt;  Leeran.graduationDate</p>
                 <p>&lt;• <span class="result">"December 2022"</span></p>
                 <p>&gt;  Leeran.experience</p>
-                <p>&lt;• <a class="link" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><span class="result">"Resume.docx"</span></a>&nbsp;//click me</p>
+                <p>&lt;• <a class="link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><span class="result">"Resume.docx"</span></a>&nbsp;//click me</p>
                 <p>&gt;  Leeran.hobbies</p>
-                <p>&lt;• [ <span class="result">"Reptiles"</span>, <span class="result">"Code"</span>, <span class="result">"Technology"</span>, <span class="result">"Gaming"</span>, <span class="result">"Tea"</span>, <span class="result">"Real Estate"</span> ]</p>
+                <p>&lt;• [ <span class="result">"Reptiles"</span>, <span class="result">"Code"</span>, <span class="result">"Technology"</span>, <span class="result">"Gaming"</span>, <span class="result">"Pickles"</span>, <span class="result">"Real Estate"</span> ]</p>
                 <p>&gt; <span class="animated">|</span></p>
               </div>
-              <div class="about-me pt-5">
-                <br>
-                <p>A young sales professional that has a passion for animals, self-improvement, and technology. My first interaction with a computer was setting one up at the age of 6 and creating my first email on a dial-up connection. Ever since then technology has always been something I have loved and followed. Following the cell phone industry and how it evolved over the last 10 years has proven to me that technology is not just the present, but it is the future.</p>
-                <br>
-                <p>At 18, I was in my second year of college and decided to get my Real Estate License. Within a year of working rentals in the heart of Midtown NYC, I was able to crack into the top 10 salesmen for the month, out of close to 200 agents in the company at the time being among the youngest. From there, I chose to go with my true passion, learning more in-depth about the things I love, Computers. </p>
-              
+              <div class="about-me row pt-5">
+                <div class="col-lg-6 col-md-12">
+                  <p>A young sales professional that has a passion for animals, self-improvement, and technology. My first interaction with a computer was setting one up at the age of 6 and creating my first email on a dial-up connection. Ever since then technology has always been something I have loved and followed. Following the cell phone industry and how it evolved over the last 10 years has proven to me that technology is not just the present, but it is the future.</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <p>At 18, I was in my second year of college and decided to get my Real Estate License. Within a year of working rentals in the heart of Midtown NYC, I cracked into the top 10 salesmen for the month, out of close to 200 agents in the company at the time being among the youngest. From there, I chose to go with my true passion, learning more in-depth about the things I love, Computers. </p>
+                </div>
               </div>
             </div>
           </div>
@@ -76,24 +78,19 @@
             </div>
           </div>
         </section>
-        <section id="social">
-          <div class="container">
-            <div class="row">
-              <div class="center col-lg-12">
-                <h1 class="display-1">Social Media</h1>
-              </div>
-            </div>
-          </div>
-        </section>
         <section id="contact">
           <div class="form-group container">
               <div class="row">
                 <div class="col-lg-12 center">
-                  <h1 class="display-1 mb-5 pt-5">Contact Me</h1>
+                  <h1 class="display-1 mb-3">Contact Me</h1>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a class="mx-5" target="_blank" href="https://github.com/leeran7"><p style="font-size: 100px;"><i class="fab fa-github"></i></p></a>
+                    <a class="mx-5" target="_blank" href="https://www.linkedin.com/in/lfarin/"><p style="font-size: 100px;"><i class="fab fa-linkedin"></i></p></a>
+                  </div>
                   <h3 class="display-3">Use link or form below</h3>
                   <h3 class="display-3"><u>Personal:</u> <a class="link" href="mailto:Leeran7@gmail.com">Leeran7@gmail.com</a></h3>
                   <h3 class="display-3"><u>School:</u> <a class="link" href="mailto:Leeran.Farin@cix.csi.cuny.edu">Leeran.Farin@cix.csi.cuny.edu</a></h3>
-                  <h3 class="display-3"><u>Real Estate:</u> <a class="link" href="mailto:LFarinRealty@gmail.com">LFarinRealty@gmail.com</a></h3>
+                  <h3 class="display-3 pb-2"><u>Real Estate:</u> <a class="link" href="mailto:LFarinRealty@gmail.com">LFarinRealty@gmail.com</a></h3>
                 </div>
               </div>
               <div class="row px-4">
