@@ -28,12 +28,19 @@ html, body {
   color: whitesmoke !important;
   font-family: 'Lato', sans-serif !important;
 }
+.nav-link:hover{
+  background-color: #f3f3f376;
+  border-radius: 5%;
+}
 .display-3 {
   color: #f3f3f3;
   font-size: 18px !important;
 }
 .animated{
-  animation: animate 1s linear infinite;
+  animation: animate 0.9s linear infinite;
+}
+img{
+  max-width: 250px !important;
 }
 @keyframes animate{
   0%{
@@ -62,13 +69,16 @@ form{
 }
 .console p{
   font-family: 'Source Code Pro', monospace;
-  max-width: 750px;
+  max-width: 85%;
   margin: 2px auto; 
+  font-size: x-large;
 }
+
 .about-me{
   font-family: 'Source Code Pro', monospace;
   max-width: 1000px;
   margin: 2px auto; 
+  font-size: larger;
 }
 .result{
   color: #2ECC71;
@@ -88,7 +98,7 @@ nav {
 }
 section {
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 110px;
 }
 #profile-pic{
   height: 20%;
@@ -102,9 +112,14 @@ section {
     height: 25%;
     width: 25%;
   }
-  
+  .social a{
+    margin: 0 1.5rem !important;
+  }
+  .social-logo{
+    font-size: 75px !important;
+  }
   .about-me{
-    font-size: smaller;
+    font-size: large;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -117,13 +132,29 @@ section {
   .p-top{
     padding-top: 50px;
   }
-  /* .about-me{
-    font-size: small;
-  } */
+  .about-me{
+    font-size: large;
+  }
+  .social a{
+    margin: 0 1.5rem !important;
+  }
+  .social-logo{
+    font-size: 75px !important;
+  }
+  .console p{
+    font-size: large;
+  }
+  
 }
 @media only screen and (max-width: 654px) {
   .nav-item{
     font-size: smaller !important;
+  }
+  .social-logo{
+    font-size: 50px !important;
+  }
+  .about-me p{
+    font-size: smaller;
   }
 }
 
@@ -131,24 +162,30 @@ section {
   .nav-item{
     font-size: small !important;
   }
-  section{
-    padding-top: 60px;
-  }
   .console{
     margin: 10px;
   }
-  
+  .social a{
+    margin: 0 1rem !important;
+  }
+  .social-logo{
+    font-size: 40px !important;
+  }
 }
 #welcome {
-  background-image: url(./photos/background.jpg);
+  background-image: url(./photos/background.jpeg);
   background-size: cover;
 }
 .jumbotron{
   padding-top: 100px;
 }
-a:hover{
+a:hover, i:hover{
   color: #ffff00 !important;
   cursor: pointer !important;
+  
+}
+.social-logo{
+  font-size: 100px;
 }
 .success{
   background-color: rgb(8, 150, 25,0.8);

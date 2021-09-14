@@ -1,143 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
-    <title>Leerans Portfolio</title>
-</head>
-<body class="bg-dark">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Leeran Joseph Farin</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navBar">
-          <ul class="navbar-nav align-items-center">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><i class="far fa-file-alt"></i> Resume</a></li>
-          </ul>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+      <title>Leerans Portfolio</title>
+  </head>
+  <body class="bg-dark">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Leeran Joseph Farin</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navBar">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><i class="far fa-file-alt"></i> Resume</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    
-    <content data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <section id="welcome">
-        <div class="m-0 p-top">
-          <h1 class="display-1 text-center welcomeMessage"></h1>
-        </div>
-      </section>
-        <section id="about">
-          <div class="container">
-            <div class="row">
-              <div class="center col-lg-12">
-                <h1 class="display-1">About Leeran</h1>
-              </div>
-              <div class="pt-5 console">
-                <p>&gt;  Leeran.location</p>
-                <p>&lt;• <span class="result">"Staten Island, NY"</span></p>
-                <p>&gt;  Leeran.major</p>
-                <p>&lt;• <span class="result">"Computer Science"</span></p>
-                <p>&gt;  Leeran.graduationDate</p>
-                <p>&lt;• <span class="result">"December 2022"</span></p>
-                <p>&gt;  Leeran.experience</p>
-                <p>&lt;• <a class="link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><span class="result">"Resume.docx"</span></a>&nbsp;//click me</p>
-                <p>&gt;  Leeran.hobbies</p>
-                <p>&lt;• [ <span class="result">"Reptiles"</span>, <span class="result">"Code"</span>, <span class="result">"Technology"</span>, <span class="result">"Gaming"</span>, <span class="result">"Pickles"</span>, <span class="result">"Real Estate"</span> ]</p>
-                <p>&gt; <span class="animated">|</span></p>
-              </div>
-              <div class="about-me row pt-5">
-                <div class="col-lg-6 col-md-12">
-                  <p>A young sales professional that has a passion for animals, self-improvement, and technology. My first interaction with a computer was setting one up at the age of 6 and creating my first email on a dial-up connection. Ever since then technology has always been something I have loved and followed. Following the cell phone industry and how it evolved over the last 10 years has proven to me that technology is not just the present, but it is the future.</p>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <p>At 18, I was in my second year of college and decided to get my Real Estate License. Within a year of working rentals in the heart of Midtown NYC, I cracked into the top 10 salesmen for the month, out of close to 200 agents in the company at the time being among the youngest. From there, I chose to go with my true passion, learning more in-depth about the things I love, Computers. </p>
-                </div>
-              </div>
+      </nav>
+      
+      <main data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <section id="welcome">
+          <div class="m-0 p-top center">
+            <h1 class="display-1 text-center m-5">Welcome!</h1>
+            <img class="img-thumbnail rounded my-3" src="./photos/picture.JPG" alt="profile pic"/>
+            <div class="d-flex flex-row justify-content-center social m-5">
+              <a class="mx-5" target="_blank" href="https://github.com/leeran7"><p ><i class="fab fa-github social-logo"></i></p></a>
+              <a class="mx-5" target="_blank" href="https://www.linkedin.com/in/lfarin/"><p><i class="fab fa-linkedin social-logo"></i></p></a>
+              <a class="mx-5" target="_blank" href="https://twitter.com/LeeranF"><p ><i class="fab fa-twitter social-logo"></i></p></a>
+              <a class="mx-5" target="_blank" href="https://www.instagram.com/leeran_farin/"><p ><i class="fab fa-instagram social-logo"></i></p></a>
+              <a class="mx-5" target="_blank" href="https://www.facebook.com/leeranf"><p ><i class="fab fa-facebook social-logo"></i></p></a>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <p class="text-center mx-2">Computer Science Student</p>
+              <p class="text-center mx-5">|</p>
+              <p class="text-center mx-2">Future Software Engineer</p>
+              <p class="text-center mx-5">|</p>
+              <p class="text-center mx-2">Former Real Estate Agent</p>
             </div>
           </div>
         </section>
-        <section id="portfolio">
-          <div class="container">
-            <div class="row">
-              <div class="center col-lg-12">
-                <h1 class="display-1">Portfolio</h1>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="contact">
-          <div class="form-group container">
+          <section id="about">
+            <div class="container">
               <div class="row">
-                <div class="col-lg-12 center">
-                  <h1 class="display-1 mb-3">Contact Me</h1>
-                  <div class="d-flex flex-row justify-content-center">
-                    <a class="mx-5" target="_blank" href="https://github.com/leeran7"><p style="font-size: 100px;"><i class="fab fa-github"></i></p></a>
-                    <a class="mx-5" target="_blank" href="https://www.linkedin.com/in/lfarin/"><p style="font-size: 100px;"><i class="fab fa-linkedin"></i></p></a>
+                <div class="center col-lg-12">
+                  <h1 class="display-1">About Leeran</h1>
+                </div>
+                <div class="pt-5 console">
+                  <p>&gt;  Leeran.location</p>
+                  <p>&lt;• <span class="result">"Staten Island, NY"</span></p>
+                  <p>&gt;  Leeran.major</p>
+                  <p>&lt;• <span class="result">"Computer Science"</span></p>
+                  <p>&gt;  Leeran.graduationDate</p>
+                  <p>&lt;• <span class="result">"December 2022"</span></p>
+                  <p>&gt;  Leeran.experience</p>
+                  <p>&lt;• <a class="link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><span class="result">"Resume.docx"</span></a>&nbsp;//click me</p>
+                  <p>&gt;  Leeran.hobbies</p>
+                  <p>&lt;• (7) [ <span class="result">"Reptiles"</span>, <span class="result">"Code"</span>, <span class="result">"Technology"</span>, <span class="result">"NBA"</span>, <span class="result">"UFC"</span>, <span class="result">"Pickles"</span>, <span class="result">"Real Estate"</span> ]</p>
+                  <p>&gt; <span class="animated">|</span></p>
+                </div>
+                <div class="about-me row pt-5">
+                  <div class="col-lg-6 col-md-12 text-center">
+                    <p>A young sales professional that has a passion for animals, self-improvement, and technology. My first interaction with a computer was setting one up at the age of 6 and creating my first email on a dial-up connection. Ever since then technology has always been something I have loved and followed. Following the cell phone industry and how it evolved over the last 10 years has proven to me that technology is not just the present, but it is the future.</p>
                   </div>
-                  <h3 class="display-3">Use link or form below</h3>
-                  <h3 class="display-3"><u>Personal:</u> <a class="link" href="mailto:Leeran7@gmail.com">Leeran7@gmail.com</a></h3>
-                  <h3 class="display-3"><u>School:</u> <a class="link" href="mailto:Leeran.Farin@cix.csi.cuny.edu">Leeran.Farin@cix.csi.cuny.edu</a></h3>
-                  <h3 class="display-3 pb-2"><u>Real Estate:</u> <a class="link" href="mailto:LFarinRealty@gmail.com">LFarinRealty@gmail.com</a></h3>
+                  <div class="col-lg-6 col-md-12 text-center">
+                    <p>At 18, I was in my second year of college and decided to get my Real Estate License. Within a year of working rentals in the heart of Midtown NYC, I cracked into the top 10 salesmen for the month, out of close to 200 agents in the company at the time being among the youngest. From there, I chose to go with my true passion, learning more in-depth about the things I love, Computers. </p>
+                  </div>
                 </div>
               </div>
-              <div class="row px-4">
-                <div id="email_status" class="center"></div>
+            </div>
+          </section>
+          <section id="portfolio">
+            <div class="container">
+              <div class="row">
+                <div class="center col-lg-12">
+                  <h1 class="display-1">Portfolio</h1>
+                </div>
               </div>
-            <form class="d-lg-flex flex-fill" id="form" method="POST" action="https://formspree.io/f/xeqvvnnr">
-              <div class="col-lg-6 col-md-12 m-2">
-                <input class="form-control" required id="Name" name="Name" placeholder="Name *"/>
-                <input class="form-control" required id="Email" name="Email" placeholder="Email *"/>
-                <input class="form-control" id="Phone" name="Phone" placeholder="Phone Number" />
-              </div>
-              <div class="col-lg-6 col-md-12  m-2">
-                <textarea class="form-control" id="Message" name="Message" required placeholder="Message *"></textarea>
-                <button class="btn btn-secondary form-control" type="submit">Submit</button>
-              </div>
-              
-            </form>
-          </div>
-        </section>
-    </content>
-    <footer></footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script>
-    var form = document.getElementById("form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("email_status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
+            </div>
+          </section>
+          <section id="contact">
+            <div class="form-group container">
+                <div class="row">
+                  <div class="col-lg-12 center">
+                    <h1 class="display-1 mb-5">Contact Me</h1>
+                    <div class="d-flex flex-row justify-content-center social my-3">
+                      <a class="mx-5" target="_blank" href="https://github.com/leeran7"><p ><i class="fab fa-github social-logo"></i></p></a>
+                      <a class="mx-5" target="_blank" href="https://www.linkedin.com/in/lfarin/"><p ><i class="fab fa-linkedin social-logo"></i></p></a>
+                      <a class="mx-5" target="_blank" href="https://twitter.com/LeeranF"><p ><i class="fab fa-twitter social-logo"></i></p></a>
+                      <a class="mx-5" target="_blank" href="https://www.instagram.com/leeran_farin/"><p><i class="fab fa-instagram social-logo"></i></p></a>
+                      <a class="mx-5" target="_blank" href="https://www.facebook.com/leeranf"><p ><i class="fab fa-facebook social-logo"></i></p></a>
+                    </div>
+                    <h3 class="display-3">Use link or form below</h3>
+                    <h3 class="display-3"><u>Personal:</u> <a class="link" href="mailto:Leeran7@gmail.com">Leeran7@gmail.com</a></h3>
+                    <h3 class="display-3"><u>School:</u> <a class="link" href="mailto:Leeran.Farin@cix.csi.cuny.edu">Leeran.Farin@cix.csi.cuny.edu</a></h3>
+                    <h3 class="display-3 pb-2"><u>Real Estate:</u> <a class="link" href="mailto:LFarinRealty@gmail.com">LFarinRealty@gmail.com</a></h3>
+                  </div>
+                </div>
+                <div class="row px-4">
+                  <div id="email_status" class="center"></div>
+                </div>
+              <form class="d-lg-flex flex-fill" id="form" method="POST" action="https://formspree.io/f/xeqvvnnr">
+                <div class="col-lg-6 col-md-12 m-2">
+                  <input class="form-control" required id="Name" name="Name" placeholder="Name *"/>
+                  <input class="form-control" required id="Email" name="Email" placeholder="Email *"/>
+                  <input class="form-control" id="Phone" name="Phone" placeholder="Phone Number" />
+                </div>
+                <div class="col-lg-6 col-md-12  m-2">
+                  <textarea class="form-control" id="Message" name="Message" required placeholder="Message *"></textarea>
+                  <button class="btn btn-secondary form-control" type="submit">Submit</button>
+                </div>
+                
+              </form>
+            </div>
+          </section>
+        </main>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>
+        var form = document.getElementById("form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("email_status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            status.innerHTML = "Success!";
+            status.classList.add("success");
+            form.reset()
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+            status.classList.add("error");
+          });
         }
-      }).then(response => {
-        status.innerHTML = "Success!";
-        status.classList.add("success");
-        form.reset()
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-        status.classList.add("error");
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-  </script>
-</body>
+        form.addEventListener("submit", handleSubmit)
+      </script>
+  </body>
 </html>
