@@ -5,20 +5,37 @@ html, body {
   width: 100%;
   height: 100%;
 }
+html,html *{
+  box-sizing: border-box !important;
+}
 .display-1, p{
   color: #d3d3d3;
+}
+.display-3 {
+  color: #f3f3f3;
+  font-size: 18px !important;
 }
 .center{
   text-align: center !important;
 }
-.card{
-  width: 18em;
+
+section {
+  height: 100vh;
+  padding-top: 125px;
+}
+/* Navigation */
+nav {
+  height: 80px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
 .navbar-brand{
   color: #ffff00 !important;
   font-weight: 900;
-  font-size: 30px !important;
-  font-family: 'Lato', sans-serif !important;
+  font-size: 50px !important;
+  font-family: 'Allison', cursive;
 }
 .link{
   text-decoration: none;
@@ -32,15 +49,56 @@ html, body {
   background-color: #f3f3f376;
   border-radius: 5%;
 }
-.display-3 {
-  color: #f3f3f3;
-  font-size: 18px !important;
+.nav-item{
+  padding: 0 20px;
+  font-size: 22px;
+  justify-content: center;
 }
+a:hover, i:hover{
+  color: #ffff00 !important;
+  cursor: pointer !important;
+  
+}
+.social-logo{
+  font-size: 100px;
+}
+#logo{
+  height: 80px;
+  width: 80px;
+}
+
+/* Welcome */
+img{
+  max-width: 300px !important;
+}
+#profile-pic{
+  height: 20%;
+  width: 20%;
+  border-radius: 400px;
+  border: 6px solid rgb(245, 245, 245,0.5);
+  opacity: 0.95;
+}
+
+#welcome {
+  background-image: url(./photos/background.jpeg);
+  background-size: cover;
+}
+#welcome i{
+  font-size: 75px ;
+}
+.text{
+  font-size: larger;
+}
+
+/* Console/About me */
 .animated{
   animation: animate 0.9s linear infinite;
 }
-img{
-  max-width: 250px !important;
+.console p{
+  font-family: 'Source Code Pro', monospace;
+  max-width: 85%;
+  margin: 2px auto; 
+  font-size: x-large;
 }
 @keyframes animate{
   0%{
@@ -53,7 +111,23 @@ img{
     opacity: 0;
   }
 }
-html,html *{box-sizing: border-box !important;}
+
+
+.about-me{
+  font-family: 'Source Code Pro', monospace;
+  max-width: 1000px;
+  margin: 2px auto; 
+  font-size: larger;
+}
+
+/* Form/Contact me */
+u{
+  font-size: larger;
+  padding-right: 10px;
+  font-weight: 800;
+  color: #ffff00
+}
+
 .form-group input{
   padding: 20px;
 }
@@ -67,46 +141,20 @@ form{
   margin: 10px;
   padding-bottom: 20px;
 }
-.console p{
-  font-family: 'Source Code Pro', monospace;
-  max-width: 85%;
-  margin: 2px auto; 
-  font-size: x-large;
-}
 
-.about-me{
-  font-family: 'Source Code Pro', monospace;
-  max-width: 1000px;
-  margin: 2px auto; 
-  font-size: larger;
-}
 .result{
   color: #2ECC71;
   font-family: 'Source Code Pro', monospace;
 }
-nav {
-  height: 80px;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+.success{
+  background-color: rgb(8, 150, 25,0.8);
 }
-.nav-item{
-  padding: 0 20px;
-  font-size: 22px;
-  justify-content: center;
+.error{
+  background-color: rgba(226, 7, 32,0.8);
 }
-section {
-  height: 100vh;
-  padding-top: 110px;
-}
-#profile-pic{
-  height: 20%;
-  width: 20%;
-  border-radius: 400px;
-  border: 6px solid rgb(245, 245, 245,0.5);
-  opacity: 0.95;
-}
+
+
+/* Responsiveness */
 @media only screen and (max-width: 1100px) {
   #profile-pic{
     height: 25%;
@@ -121,10 +169,14 @@ section {
   .about-me{
     font-size: large;
   }
+  #welcome i{
+    font-size: 50px !important;
+  }
+  
 }
 @media only screen and (max-width: 991px) {
   textarea{
-    height: 300px !important;
+    height: 175px !important;
   }
   .navbar-nav{
     flex-direction: row !important;
@@ -139,21 +191,32 @@ section {
     margin: 0 1.5rem !important;
   }
   .social-logo{
-    font-size: 75px !important;
+    font-size: 60px !important;
   }
   .console p{
     font-size: large;
   }
-  
-}
-@media only screen and (max-width: 654px) {
   .nav-item{
     font-size: smaller !important;
   }
+  
+  
+  
+}
+@media only screen and (max-width: 654px) {
   .social-logo{
     font-size: 50px !important;
   }
   .about-me p{
+    font-size: smaller;
+  }
+  #welcome i{
+    font-size: 40px !important;
+  }
+  #message{
+    height: 80%;
+  }
+  .text{
     font-size: smaller;
   }
 }
@@ -172,30 +235,5 @@ section {
     font-size: 40px !important;
   }
 }
-#welcome {
-  background-image: url(./photos/background.jpeg);
-  background-size: cover;
-}
-.jumbotron{
-  padding-top: 100px;
-}
-a:hover, i:hover{
-  color: #ffff00 !important;
-  cursor: pointer !important;
-  
-}
-.social-logo{
-  font-size: 100px;
-}
-.success{
-  background-color: rgb(8, 150, 25,0.8);
-}
-.error{
-  background-color: rgba(226, 7, 32,0.8);
-}
-u{
-  font-size: larger;
-  padding-right: 10px;
-  font-weight: 800;
-  color: #ffff00
-}
+
+

@@ -11,23 +11,24 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
       <title>Leerans Portfolio</title>
   </head>
   <body class="bg-dark">
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Leeran Joseph Farin</a>
+          <a class="navbar-brand mx-5" href="#">Leeran Joseph Farin</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse justify-content-end" id="navBar">
-            <ul class="navbar-nav align-items-center">
+            <ul class="navbar-nav justify-content-center align-items-center">
               <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
               <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-              <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><i class="far fa-file-alt"></i> Resume</a></li>
+              <li class="nav-item"><a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1NZen5lGhwf2h_fG7_C0whTtdSeAobjtJHnOO8va0zQU/edit?usp=sharing"><i class="far fa-file-alt"></i> Résumè</a></li>
             </ul>
           </div>
         </div>
@@ -35,9 +36,9 @@
       
       <main data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <section id="welcome">
-          <div class="m-0 p-top center">
+          <div class="m-0 center">
             <h1 class="display-1 text-center m-5">Welcome!</h1>
-            <img class="img-thumbnail rounded my-3" src="./photos/picture.JPG" alt="profile pic"/>
+            <img class="img-fluid rounded my-3" src="./photos/picture.JPG" alt="profile pic"/>
             <div class="d-flex flex-row justify-content-center social m-5">
               <a class="mx-5" target="_blank" href="https://github.com/leeran7"><p ><i class="fab fa-github social-logo"></i></p></a>
               <a class="mx-5" target="_blank" href="https://www.linkedin.com/in/lfarin/"><p><i class="fab fa-linkedin social-logo"></i></p></a>
@@ -46,11 +47,10 @@
               <a class="mx-5" target="_blank" href="https://www.facebook.com/leeranf"><p ><i class="fab fa-facebook social-logo"></i></p></a>
             </div>
             <div class="d-flex flex-row justify-content-center">
-              <p class="text-center mx-2">Computer Science Student</p>
-              <p class="text-center mx-5">|</p>
-              <p class="text-center mx-2">Future Software Engineer</p>
-              <p class="text-center mx-5">|</p>
-              <p class="text-center mx-2">Former Real Estate Agent</p>
+              <p class="text-center mx-2 text">Computer Science Student</p>
+              <p class="text-center mx-5 text">|</p>
+              <p class="text-center mx-2 text">Future Software Engineer</p>
+              
             </div>
           </div>
         </section>
@@ -74,10 +74,10 @@
                   <p>&gt; <span class="animated">|</span></p>
                 </div>
                 <div class="about-me row pt-5">
-                  <div class="col-lg-6 col-md-12 text-center">
+                  <div class="col-lg-6 col-md-12 text-center p-1">
                     <p>A young sales professional that has a passion for animals, self-improvement, and technology. My first interaction with a computer was setting one up at the age of 6 and creating my first email on a dial-up connection. Ever since then technology has always been something I have loved and followed. Following the cell phone industry and how it evolved over the last 10 years has proven to me that technology is not just the present, but it is the future.</p>
                   </div>
-                  <div class="col-lg-6 col-md-12 text-center">
+                  <div class="col-lg-6 col-md-12 text-center p-1">
                     <p>At 18, I was in my second year of college and decided to get my Real Estate License. Within a year of working rentals in the heart of Midtown NYC, I cracked into the top 10 salesmen for the month, out of close to 200 agents in the company at the time being among the youngest. From there, I chose to go with my true passion, learning more in-depth about the things I love, Computers. </p>
                   </div>
                 </div>
@@ -116,12 +116,12 @@
                 </div>
               <form class="d-lg-flex flex-fill" id="form" method="POST" action="https://formspree.io/f/xeqvvnnr">
                 <div class="col-lg-6 col-md-12 m-2">
-                  <input class="form-control" required id="Name" name="Name" placeholder="Name *"/>
-                  <input class="form-control" required id="Email" name="Email" placeholder="Email *"/>
-                  <input class="form-control" id="Phone" name="Phone" placeholder="Phone Number" />
+                  <input class="form-control" required id="name" name="name" placeholder="Name *"/>
+                  <input class="form-control" required id="email" name="email" placeholder="Email *"/>
+                  <input class="form-control" id="phone" name="phone" placeholder="Phone Number" />
                 </div>
                 <div class="col-lg-6 col-md-12  m-2">
-                  <textarea class="form-control" id="Message" name="Message" required placeholder="Message *"></textarea>
+                  <textarea class="form-control" id="message" name="message" required placeholder="Message *"></textarea>
                   <button class="btn btn-secondary form-control" type="submit">Submit</button>
                 </div>
                 
