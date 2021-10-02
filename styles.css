@@ -1,5 +1,6 @@
 * {
   font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
 }
 html, body {
   width: 100%;
@@ -31,8 +32,11 @@ nav {
   justify-content: center;
   font-size: 20px;
 }
+.text-yellow{
+  color: #ffff00 !important
+}
 .navbar-brand{
-  color: #ffff00 !important;
+  /* color: #ffff00 !important; */
   font-weight: 900;
   font-size: 50px !important;
   font-family: 'Allison', cursive;
@@ -120,20 +124,25 @@ img{
   font-size: larger;
 }
 /* Experience */
-
-#experience .container{
-  height: 100%;
-}
-.card{
-  height: 175px;
-}
-.card-header{
-  height: 50px
+.job-item{
+  height: 35vh;
+  width: 50vw;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
 .card-body{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dark-text{
+  color: #212529;
+}
+.light-text{
+  color: #d3d3d3;
 }
 
 /* Form/Contact me */
@@ -196,6 +205,7 @@ form{
   }
   .navbar-nav{
     flex-direction: row !important;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
   }
   .p-top{
     padding-top: 50px;
@@ -215,7 +225,13 @@ form{
   .nav-item{
     font-size: smaller !important;
   }
-  
+  #experience{
+    height: 140vh;
+  }
+  .job-item{
+    height: 30vh;
+    width: 100vw;
+  }
   
   
 }
@@ -239,7 +255,7 @@ form{
 
 @media only screen and (max-width: 550px) {
   #experience .container{
-    width: 85%;
+    /* width: 85%; */
   }
   .nav-item{
     font-size: small !important;
