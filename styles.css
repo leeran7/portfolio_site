@@ -124,6 +124,9 @@ img{
   font-size: larger;
 }
 /* Experience */
+section + #experience {
+  height: 225vh;
+}
 .job-item{
   height: 35vh;
   width: 50vw;
@@ -138,13 +141,17 @@ img{
   flex-direction: column;
   justify-content: space-evenly;
 }
-.dark-text{
-  color: #212529;
+.dark-text {
+  color: #212529 !important;
 }
 .light-text{
   color: #d3d3d3;
 }
-
+.job-item-small{
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
 /* Form/Contact me */
 u{
   font-size: larger;
@@ -203,6 +210,9 @@ form{
   textarea{
     height: 175px !important;
   }
+  section + #experience {
+    height: 300vh;
+  }
   .navbar-nav{
     flex-direction: row !important;
     background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
@@ -226,7 +236,11 @@ form{
     font-size: smaller !important;
   }
   #experience{
-    height: 140vh;
+    height: 150vh;
+  }
+
+  .job-item-small{
+    height: 15vh !important;
   }
   .job-item{
     height: 30vh;
@@ -236,11 +250,17 @@ form{
   
 }
 @media only screen and (max-width: 654px) {
+  section + #experience {
+    height: 350vh;
+  }
   .social-logo{
     font-size: 50px !important;
   }
   .about-me p{
     font-size: smaller;
+  }
+  .job-item{
+    height: 40vh;
   }
   #welcome i{
     font-size: 40px !important;
@@ -254,9 +274,7 @@ form{
 }
 
 @media only screen and (max-width: 550px) {
-  #experience .container{
-    /* width: 85%; */
-  }
+  
   .nav-item{
     font-size: small !important;
   }
