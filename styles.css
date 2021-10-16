@@ -115,8 +115,6 @@ img{
     opacity: 0;
   }
 }
-
-
 .about-me{
   font-family: 'Source Code Pro', monospace;
   max-width: 1000px;
@@ -211,7 +209,7 @@ form{
     height: 175px !important;
   }
   section + #experience {
-    height: 300vh;
+    height: 250vh;
   }
   .navbar-nav{
     flex-direction: row !important;
@@ -251,7 +249,7 @@ form{
 }
 @media only screen and (max-width: 654px) {
   section + #experience {
-    height: 350vh;
+    height: 340vh;
   }
   .social-logo{
     font-size: 50px !important;
