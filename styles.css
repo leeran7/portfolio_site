@@ -20,7 +20,6 @@ html,html *{
 .center{
   text-align: center !important;
 }
-
 section {
   height: 100vh;
   padding-top: 125px;
@@ -40,6 +39,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
+.navbar .navbar-toggler{
+  border:none;
+}
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
 .text-yellow{
   color: #ffff00 !important
 }
@@ -55,10 +60,6 @@ nav {
 .nav-link{
   color: whitesmoke !important;
   font-weight: 600;
-}
-.nav-link:hover{
-  background-color: #f3f3f376;
-  border-radius: 5%;
 }
 .nav-item{
   padding: 0 20px;
@@ -130,7 +131,7 @@ img{
 }
 /* Experience */
 section + #experience {
-  height: 225vh;
+  height: 240vh;
 }
 .job-item{
   height: 35vh;
@@ -140,6 +141,9 @@ section + #experience {
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
+}
+.job-item p{
+  font-size: 18px;
 }
 .card-body{
   display: flex;
@@ -154,6 +158,8 @@ section + #experience {
 }
 .job-item-small{
   height: 20vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -192,6 +198,16 @@ form{
 
 
 /* Responsiveness */
+@media only screen and (max-width: 1465px) {
+  .card-body p{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1165px) {
+  .job-item p{
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 1100px) {
   #profile-pic{
     height: 25%;
@@ -215,12 +231,14 @@ form{
   #about {
     height: 120vh;
   }
-  
+  .job-item p{
+    font-size: 17px !important;
+  }
   textarea{
     height: 175px !important;
   }
   section + #experience {
-    height: 250vh;
+    height: 300vh;
   }
   .navbar-nav{
     flex-direction: row !important;
@@ -258,16 +276,20 @@ form{
   
   
 }
-@media only screen and (max-width: 654px) {
-  
+@media only screen and (max-width: 768px) {
   section + #experience {
-    height: 350vh;
+    height: 325vh;
+  }
+}
+@media only screen and (max-width: 654px) {
+  section + #experience {
+    height: 405vh;
   }
   .social-logo{
     font-size: 50px !important;
   }
   .about-me p{
-    font-size: smaller;
+    font-size: 16px;
   }
   #about {
     height: 110vh;
