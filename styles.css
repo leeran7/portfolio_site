@@ -1,5 +1,5 @@
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
 html, body {
@@ -11,6 +11,7 @@ html,html *{
 }
 .display-1, p{
   color: #d3d3d3;
+  font-weight: 500 !important;
 }
 .display-3 {
   color: #f3f3f3;
@@ -26,17 +27,23 @@ section {
 }
 /* Navigation */
 nav {
-  height: 80px;
   padding: 20px;
-  align-items: center;
+  font-size: 18px;
   justify-content: center;
-  font-size: 20px;
+  align-items: center;
+}
+.navbar {
+  padding-bottom: 10px;
+  /* flex-wrap: nowrap !important; */
+}
+.navbar-nav{
+  display: flex;
+  flex-wrap: wrap;
 }
 .text-yellow{
   color: #ffff00 !important
 }
 .navbar-brand{
-  /* color: #ffff00 !important; */
   font-weight: 900;
   font-size: 50px !important;
   font-family: 'Allison', cursive;
@@ -47,7 +54,7 @@ nav {
 }
 .nav-link{
   color: whitesmoke !important;
-  font-family: 'Lato', sans-serif !important;
+  font-weight: 600;
 }
 .nav-link:hover{
   background-color: #f3f3f376;
@@ -55,7 +62,7 @@ nav {
 }
 .nav-item{
   padding: 0 20px;
-  font-size: 21px;
+
   justify-content: center;
 }
 a:hover, i:hover{
@@ -205,6 +212,10 @@ form{
   
 }
 @media only screen and (max-width: 991px) {
+  #about {
+    height: 120vh;
+  }
+  
   textarea{
     height: 175px !important;
   }
@@ -248,14 +259,18 @@ form{
   
 }
 @media only screen and (max-width: 654px) {
+  
   section + #experience {
-    height: 340vh;
+    height: 350vh;
   }
   .social-logo{
     font-size: 50px !important;
   }
   .about-me p{
     font-size: smaller;
+  }
+  #about {
+    height: 110vh;
   }
   .job-item{
     height: 40vh;
