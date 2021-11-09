@@ -1,13 +1,13 @@
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-}
-html, body {
-  width: 100%;
-  height: 100%;
+  
 }
 html,html *{
   box-sizing: border-box !important;
+}
+html, body {
+  overflow-x: hidden;
 }
 .display-1, p{
   color: #d3d3d3;
@@ -22,7 +22,7 @@ html,html *{
 }
 section {
   height: 100vh;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 /* Navigation */
 nav {
@@ -50,7 +50,7 @@ nav {
 }
 .navbar-brand{
   font-weight: 900;
-  font-size: 50px !important;
+  font-size: 35px !important;
   font-family: 'Allison', cursive;
 }
 .link{
@@ -323,5 +323,24 @@ form{
     font-size: 40px !important;
   }
 }
-
-
+@media only screen and (max-width: 375px) {
+  /* section {
+    padding-top: 40px;
+  } */
+  #about{
+  height: 160vh;
+  }
+  #experience {
+    height: 420vh;
+  }
+  .job-item{
+    font-size: .8em;
+  }
+  .navbar-brand{
+    font-size: 30px !important;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: column !important;
+  }
+}
